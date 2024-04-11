@@ -1,0 +1,19 @@
+camunda:
+  client:
+    mode: simple
+    auth:
+      username: demo
+      password: demo
+    zeebe:
+      enabled: true
+      # when using Version 8.5.0 use these:
+      # gateway-url: http://localhost:26500
+      # prefer-rest-over-grpc: false
+      # base-url: http://localhost:8080
+      base-url: http://localhost:26500
+    operate:
+      enabled: true
+      base-url: http://localhost:8081
+    tasklist:
+      enabled: true
+      base-url: http://localhost:8082
